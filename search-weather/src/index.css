@@ -1,0 +1,64 @@
+/* body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin: 10%;
+    padding:0%;
+    
+}
+.container{
+    padding:50px;
+    margin-top: 20px;
+    background-color: rgb(224, 226, 231);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    color: rgb(49, 67, 185);
+}
+
+.addBtn{
+    background-color: rgb(15, 192, 15);
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4px;
+    width: 100%;
+    border-radius: 5px;
+}
+.amountInput{
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.descriptionInput{
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:4px;
+}
+.expenseList{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(169, 180, 208);
+    gap: 10px;
+    border-radius: 5px;
+    padding: 8px;
+}
+li{
+    list-style: none;
+    padding:3px;
+    color: white;
+} */
