@@ -1,64 +1,182 @@
-/* body{
+body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-Container{
+    margin: 200px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgb(121, 113, 242);
+    display: flex;
+    flex-direction: column;
+    color:white;
+    border-radius: 20px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+}
+
+button{
+    padding: 10px;
+    border-radius: 50px;
+    width: 40px;
+    margin: 10px;
+    border: none;
+    background-color: white;
+}
+
+.temp p{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.temp p1{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.description{
+    font-size: 13px;
+}
+
+.hs{
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+    margin-right: 20px;
+}
+.humidity , .windSpeed{
+    text-align: left;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.humidity-Img{
+    height: 35px;
+    margin-top: 20px;
+
+}
+
+.percentage-Humidity{
+    display: flex;
+    flex-direction: column;
+}
+.humidity-Title{
+    margin-top: -20px;
+
+}
+.percent{
+    font-size: 20px;
+}
+.img-per-title{
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 60vh;
-    margin: 10%;
-    padding:0%;
-    
-}
-.container{
-    padding:50px;
-    margin-top: 20px;
-    background-color: rgb(224, 226, 231);
-    border-radius: 10px;
-    box-sizing: border-box;
+   
 }
 
-.title{
-    text-align: center;
-    color: rgb(49, 67, 185);
+
+.weather-icon{
+    height: 100px;
+    margin: 30px;
+    margin-bottom:0px;
 }
 
-.addBtn{
-    background-color: rgb(15, 192, 15);
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 4px;
+.weather-small-icon{
+     height: 10px;   
+}
+
+
+
+
+
+
+
+
+/* General styling */
+.weather-Container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(121, 113, 242);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+/* Input box and button */
+.weather-Container input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.weather-Container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* Weather output */
+.temp {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.hs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.img-per-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .weather-Container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .hs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-Container input {
     width: 100%;
-    border-radius: 5px;
-}
-.amountInput{
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-}
-.descriptionInput{
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-}
-.inputs{
+  }
+
+  .weather-Container button {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap:4px;
+    margin-top: 10px;
+  }
+
+  .temp {
+    font-size: 20px;
+  }
 }
-.expenseList{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(169, 180, 208);
-    gap: 10px;
-    border-radius: 5px;
-    padding: 8px;
-}
-li{
-    list-style: none;
-    padding:3px;
-    color: white;
-} */
