@@ -1,4 +1,3 @@
-// Weather.js
 import React, { useState } from "react";
 
 const Weather = () => {
@@ -29,7 +28,7 @@ const Weather = () => {
     }
   };
 
-  // ✅ Image logic
+  
   let weatherImg = null;
 
   if (weather) {
@@ -69,7 +68,7 @@ const Weather = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Enter city"
+          placeholder="Search City..."
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
@@ -79,7 +78,7 @@ const Weather = () => {
 
         {weather && (
           <div>
-            {/* ✅ Weather Image */}
+         
             <div className="weather-image">{weatherImg}</div>
             
 
