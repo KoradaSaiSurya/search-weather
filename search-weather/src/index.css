@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.weather-Container {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+ background-color: #4FC3F7; 
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 20px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+}
+
+button{
+    padding: 10px;
+    border-radius: 50px;
+    width: 40px;
+    margin: 10px;
+    border: none;
+    background-color: white;
+}
+
+.temp p{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.temp p1{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.description{
+    font-size: 13px;
+}
+
+.hs{
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+    margin-right: 20px;
+}
+.humidity , .windSpeed{
+    text-align: left;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.humidity-Img{
+    height: 35px;
+    margin-top: 20px;
+
+}
+
+.percentage-Humidity{
+    display: flex;
+    flex-direction: column;
+}
+.humidity-Title{
+    margin-top: -20px;
+
+}
+.percent{
+    font-size: 20px;
+}
+.img-per-title{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   gap: 8px;
+}
+
+
+.weather-icon{
+    height: 150px;
+    margin: 30px;
+    margin-bottom:0px;
+}
+
+.weather-small-icon{
+     height: 10px;   
+}
+
+
+@media(max-width: 768px) {
+  .weather-Container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .hs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-Container input {
+    width: 90%;
+  }
+
+  .weather-Container button {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .temp {
+    font-size: 20px;
+  }
+}
