@@ -66,6 +66,7 @@ const Weather = () => {
   return (
     <div className="weather-Container">
       <form onSubmit={handleSubmit}>
+        <div className="input-search">
         <input
           type="text"
           placeholder="Search City..."
@@ -73,6 +74,7 @@ const Weather = () => {
           onChange={(e) => setCity(e.target.value)}
         />
         <button onClick={getWeather}> 🔍︎ </button>
+        </div> 
 
         <div className="clouds"> </div>
 
